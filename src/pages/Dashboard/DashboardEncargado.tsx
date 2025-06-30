@@ -571,8 +571,10 @@ const DashboardEncargado: React.FC = () => {
                                 <option value="INSTRUCTOR_NORMAL">Instructor Social</option>
                                 <option value="INSTRUCTOR_REMUNERADO">Instructor Remunerado</option>
                             </select>
-                            {!editingUser && (
+                            {!editingUser ? (
                                 <input type="password" placeholder="Contraseña" value={userForm.contrasena} onChange={e => setUserForm(f => ({ ...f, contrasena: e.target.value }))} required className="w-full border rounded px-3 py-2" />
+                            ) : (
+                                <input type="password" placeholder="Nueva contraseña (opcional)" value={userForm.contrasena} onChange={e => setUserForm(f => ({ ...f, contrasena: e.target.value }))} className="w-full border rounded px-3 py-2" />
                             )}
                             <input
                                 type="text"
