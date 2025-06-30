@@ -6,7 +6,7 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 import img1 from '../../assets/login/DEI.jpg';
-import img2 from '../../assets/login/edificio.jpg';
+import img2 from '../../assets/login/Edificio.jpg';
 import img3 from '../../assets/login/Mural.jpg';
 
 interface FormValues {
